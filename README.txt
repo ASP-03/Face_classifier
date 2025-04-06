@@ -1,21 +1,58 @@
-# FairFace Streamlit App
+🎭 FairFace Streamlit App
 
-This is a simple Streamlit app to classify race (Asian, Black, or White) and gender (Male, Female) using a deep learning model trained on the FairFace dataset.
+This is a simple and intuitive Streamlit app that classifies race (Asian, Black, or White) and gender (Male or Female) using deep learning models trained on the FairFace dataset.
 
-## 📦 Files
-- `app.py`: Main Streamlit app
-- `fairface_race_classifier.h5`: Your trained Keras model for race prediction
-- `fairface_race_classifier.h5`: Your trained Keras model for gender prediction
+──────────────────────────────
+📁 Files
 
-## 🚀 How to Run(all files need to be in the same folder)
+Everything should be in ONE folder:
 
-1. Move your trained model file (`fairface_race_classifier.h5`) into this folder.
-2. Move your trained model file (`fairface_gender_classifier.h5`) into this folder.
-3. Install dependencies:
-   ```
+- app.py                         ← Main Streamlit app
+- fairface_race_classifier.h5   ← Trained Keras model for race prediction
+- fairface_gender_classifier.h5 ← Trained Keras model for gender prediction
+
+──────────────────────────────
+🚀 How to Run
+
+1. Place all required files in the same folder:
+   - app.py
+   - fairface_race_classifier.h5
+   - fairface_gender_classifier.h5
+
+2. Install the dependencies:
    pip install streamlit tensorflow pillow
-   ```
-4. Run the app:
-   ```
+
+3. Run the app using Streamlit:
    streamlit run app.py
-Enjoy!
+
+4. Once the app is running:
+   - Upload a face image
+   - Get instant predictions for:
+     • Race: Asian, Black, or White
+     • Gender: Male or Female
+
+──────────────────────────────
+✨ Features
+
+- Upload your own face image
+- Predict race and gender instantly
+- Clean UI with real-time prediction
+- Powered by your trained deep learning models
+
+──────────────────────────────
+🧠 Built With
+
+- Streamlit – for the web app interface
+- TensorFlow / Keras – for model handling
+- FairFace Dataset – for training data
+
+──────────────────────────────
+📌 Note
+
+This app is intended for educational and demonstration purposes only.
+Prediction accuracy may vary depending on training quality and data balance.
+
+──────────────────────────────
+📄 License
+
+This project is open-source and available under the MIT License.
